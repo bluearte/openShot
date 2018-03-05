@@ -1,0 +1,31 @@
+<?xml version="1.0">
+<tool>
+    <init>
+        <user value="EfrizalH"/>
+        <host value="T5810-023"/>
+        <date value="2018/03/05 09:25:00"/>
+        <appFrom value="nuke"/>
+        <majVer value="1"/>
+    </init>
+    <contents>
+        <name>
+            openShot
+        </name>
+        <description>
+            Open shot from directory
+        </description>
+        <versioning>
+            <availability>
+                <target platform="all" arch="all">
+                    0.1.0
+                </target>
+            </availability>
+            <stables>
+                <stable maj="0" min="1" patch="0"/>
+            </stables>
+        </versioning>
+        <platform name="all">
+            <arch name="all">
+            </arch>
+        </platform>
+</tool>
