@@ -17,5 +17,5 @@ class Panel(QWidget):
         
         self.setLayout(hLayout)
 
-widget = Panel()
-widget.show()
+panel = Panel()
+panel.show()
