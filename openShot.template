@@ -1,31 +1,34 @@
-<?xml version="1.0">
+<?xml version="1.0" encoding="UTF-8" ?>
 <tool>
-    <init>
-        <user value="EfrizalH"/>
-        <host value="T5810-023"/>
-        <date value="2018/03/05 09:25:00"/>
-        <appFrom value="nuke"/>
-        <majVer value="1"/>
-    </init>
-    <contents>
-        <name>
-            openShot
-        </name>
-        <description>
-            Open shot from directory
-        </description>
-        <versioning>
-            <availability>
-                <target platform="all" arch="all">
-                    0.1.0
-                </target>
-            </availability>
-            <stables>
-                <stable maj="0" min="1" patch="0"/>
-            </stables>
-        </versioning>
-        <platform name="all">
-            <arch name="all">
-            </arch>
-        </platform>
+  <init>
+    <user value="efrizal" />
+    <host value="T5810-023" />
+    <date value="2018/03/05 15:36:24" />
+    <appFrom value="nuke" />
+    <version value="1" />
+  </init>
+  <contents>
+    <name>openShot</name>
+    <description>open shot</description>
+    <versioning>
+      <availability>
+        <target arch="all" platform="all">
+          0.1.0
+        </target>
+      </availability>
+      <stables />
+    </versioning>
+    <platform name="all">
+      <arch name="all">
+        <environment>
+          <key action="append" name="MZ_NUKE_MENU">openShot</key>
+          <key action="append" name="NUKE_PATH">[version]/all/python</key>
+        </environment>
+        <dependencies>
+          <tool app="python" name="Qute" version="1.&gt;=1.0" />
+        </dependencies>
+      </arch>
+    </platform>
+  </contents>
 </tool>
+

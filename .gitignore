@@ -1,0 +1,6 @@
+/dependencies
+/release
+/debug
+/.build
+*.dblite
+

@@ -1,21 +1,27 @@
-from PySide.QtGui import *
-from PySide.QtCore import *
+from Qt import QtGui
+from Qt import QtCore
+from Qt import QtWidgets
 
-class Panel(QWidget):
+import openShot_version
+
+__version__ = openShot_version.nuke_openShot_version()
+
+class Panel(QtWidgets.QWidget):
     def __init__(self):
         super(Panel, self).__init__()
 
-        label = QLabel()
+        label = QtWidgets.QLabel()
         label.setText("Episode")
 
-        comboBox = QComboBox()
+        comboBox = QtWidgets.QComboBox()
         comboBox.addItem("")
 
-        hLayout = QHBoxLayout()
+        hLayout = QtWidgets.QHBoxLayout()
         hLayout.addWidget(label)
         hLayout.addWidget(comboBox)
         
         self.setLayout(hLayout)
 
-panel = Panel()
-panel.show()
+def main():
+    main.panel = Panel()
+    main.panel.show()
