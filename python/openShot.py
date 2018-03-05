@@ -1,6 +1,5 @@
 from PySide.QtGui import *
 from PySide.QtCore import *
-import sys
 
 class Panel(QWidget):
     def __init__(self):
